@@ -533,6 +533,7 @@ GameObject:
   - component: {fileID: 1411716413}
   - component: {fileID: 1411716416}
   - component: {fileID: 1411716412}
+  - component: {fileID: 1411716417}
   m_Layer: 0
   m_Name: bucket
   m_TagString: Untagged
@@ -547,7 +548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411716411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4d104953219abd3439eccffda330d88f, type: 3}
   m_Name: 
@@ -625,7 +626,7 @@ Transform:
   m_GameObject: {fileID: 1411716411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.03, y: 6.146, z: 0.438}
+  m_LocalPosition: {x: -3.03, y: 3, z: 0.438}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -638,7 +639,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411716411}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 888d3cd3f4ca43a46810c0f55d29be38, type: 3}
   m_Name: 
@@ -648,6 +649,32 @@ MonoBehaviour:
   spawnRate: 0.05
   downwardFlowSpeed: 2
   paintConsumptionPerDrop: 0.1
+--- !u!114 &1411716417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411716411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7619128f3fee894bba511c376da31e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SphericalPendulumMath
+  data: {fileID: 0}
+  pivot: {fileID: 887371039}
+  baseLength: 5
+  gravity: 9.81
+  airDamping: 0.01
+  shape: 0
+  bucketHeight: 0.3
+  bucketInteractionRadius: 0.5
+  emptyBucketMass: 0.5
+  maxPaintMass: 2
+  currentPaintMass: 2
+  drainRate: 0.05
+  theta: 1
+  phi: 0.3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
